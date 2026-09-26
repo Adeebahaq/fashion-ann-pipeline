@@ -12,3 +12,6 @@ models/*
 .dvc/config
 
 .dvc/config
+
+data/raw/
+data/processed/
