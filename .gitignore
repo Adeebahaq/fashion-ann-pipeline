@@ -8,3 +8,7 @@ models/*
 !.gitkeep
 .dvc/tmp/
 /models
+
+.dvc/config
+
+.dvc/config
