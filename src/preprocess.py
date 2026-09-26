@@ -9,10 +9,9 @@ def main():
 
     train = np.load("data/raw/train.npz")
     test = np.load("data/raw/test.npz")
-
-    x_train_full = train["images"].astype("float32") / 255.0
+    x_train_full = np.clip(train["images"].astype("float32") / 255.0, 0.0, 1.0
     y_train_full = train["labels"]
-    x_test = test["images"].astype("float32") / 255.0
+    x_test = test["images"].astype("float32")/ 255.0, 0.0, 1.0
     y_test = test["labels"]
 
     x_train, x_val, y_train, y_val = train_test_split(
